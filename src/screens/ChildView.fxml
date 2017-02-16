@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="base_pane" prefHeight="600.0" prefWidth="1024.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <MenuBar prefHeight="0.0" prefWidth="1024.0">
+        <menus>
+          <Menu fx:id="func_file" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="func_backtomain" mnemonicParsing="false" text="Back to Main Page" />
+              <MenuItem fx:id="func_print" mnemonicParsing="false" text="Print" />
+                  <MenuItem fx:id="func_close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu fx:id="func_help" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="func_about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutX="8.0" layoutY="32.0" prefHeight="432.0" prefWidth="800.0">
+         <children>
+            <Canvas fx:id="c1" height="427.0" width="796.0" />
+            <Canvas fx:id="c2" height="427.0" layoutX="12.0" layoutY="13.0" width="796.0" />
+            <Canvas fx:id="c3" height="427.0" layoutX="12.0" layoutY="13.0" width="796.0" />
+            <Canvas fx:id="c4" height="427.0" layoutX="12.0" layoutY="13.0" width="796.0" />
+            <Canvas fx:id="c5" height="427.0" layoutX="12.0" layoutY="13.0" width="796.0" />
+            <Canvas fx:id="c6" height="427.0" layoutX="12.0" layoutY="13.0" width="796.0" />
+         </children>
+      </StackPane>
+      <Slider fx:id="eraser_val" layoutX="857.0" layoutY="188.0" />
+      <Slider fx:id="brush_val" layoutX="857.0" layoutY="282.0" />
+      <Button fx:id="eraser" layoutX="895.0" layoutY="146.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Eraser" />
+      <Button fx:id="brush" layoutX="895.0" layoutY="239.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="Brush" />
+      <Button fx:id="pointer" layoutX="893.0" layoutY="77.0" mnemonicParsing="false" text="Pointer" />
+      <HBox layoutX="844.0" layoutY="327.0" prefHeight="31.0" prefWidth="171.0" spacing="2.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="844.0">
+         <children>
+            <Button fx:id="black" mnemonicParsing="false" text="Black" />
+            <Button fx:id="grey" mnemonicParsing="false" text="Grey" />
+            <Button fx:id="brown" mnemonicParsing="false" text="Brown" />
+         </children>
+      </HBox>
+      <Button fx:id="prev" layoutX="857.0" layoutY="524.0" mnemonicParsing="false" text="Prev" />
+      <Button fx:id="next" layoutX="931.0" layoutY="524.0" mnemonicParsing="false" text="Next" />
+      <Button fx:id="clear" layoutX="895.0" layoutY="400.0" mnemonicParsing="false" text="Clear" />
+   </children>
+</fx:root>

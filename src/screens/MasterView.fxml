@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="base_pane" prefHeight="600.0" prefWidth="1024.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <MenuBar prefHeight="0.0" prefWidth="1024.0">
+        <menus>
+          <Menu fx:id="func_file" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="func_backtomain" mnemonicParsing="false" text="Back to Main Page" />
+              <MenuItem fx:id="func_print" mnemonicParsing="false" text="Print" />
+                  <MenuItem fx:id="func_close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu fx:id="func_help" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="func_about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Region fx:id="title_master" layoutX="144.0" layoutY="100.0" prefHeight="200.0" prefWidth="737.0" />
+      <Button fx:id="button_start" layoutX="429.0" layoutY="435.0" mnemonicParsing="false" text="Here to begin journey" />
+   </children>
+</fx:root>
