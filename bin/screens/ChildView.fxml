@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.media.*?>
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.control.*?>
@@ -55,5 +56,18 @@
       <Button fx:id="prev" layoutX="857.0" layoutY="524.0" mnemonicParsing="false" text="Prev" />
       <Button fx:id="next" layoutX="931.0" layoutY="524.0" mnemonicParsing="false" text="Next" />
       <Button fx:id="clear" layoutX="895.0" layoutY="400.0" mnemonicParsing="false" text="Clear" />
+      <ScrollPane layoutX="14.0" layoutY="479.0" prefHeight="110.0" prefWidth="813.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="104.0" prefWidth="1227.0">
+               <children>
+                  <ImageView fx:id="sticker1" fitHeight="71.0" fitWidth="79.0" layoutX="24.0" layoutY="8.0" onDragDetected="#drag" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Sticker/butterfly_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </fx:root>
